@@ -1,0 +1,10 @@
+{
+  "generator-openapi-repo": {
+    "importExistingSpec": false,
+    "name": "YegoBoxApi",
+    "repo": "richard457/api",
+    "splitSpec": true,
+    "samples": true,
+    "installSwaggerUI": true
+  }
+}

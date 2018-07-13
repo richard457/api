@@ -1,0 +1,16 @@
+get:
+  summary: List User Files
+  operationId: getUserFiles
+  parameters:
+    - name: all
+      in: query
+      description: all Files of current user.
+      required: false
+      type: string
+  responses:
+    '200':
+      description: successful operation
+    '406':
+      description: not acceptable
+    '500':
+      description: internal server error

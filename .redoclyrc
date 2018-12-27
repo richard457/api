@@ -1,0 +1,8 @@
+
+apiTitle: YeGoBox Api
+splitSpec: true
+codeSamples: true
+swaggerUI: true
+travis: true
+repo: richard457/api
+oasVersion: 3.0.0

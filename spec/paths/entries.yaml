@@ -1,0 +1,13 @@
+get:
+  tags:
+    - Files
+  summary: Get list of files
+  description: Returns list of files
+  operationId: getUserFiles
+  responses:
+    '200':
+      description: successful operation
+    '400':
+      description: Bad request
+  security:
+    - api_key_security_example: []

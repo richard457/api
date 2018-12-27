@@ -1,0 +1,58 @@
+post:
+  tags:
+    - DB
+  summary: Add new Database
+  operationId: addDb
+  parameters:
+    - name: folder_id
+      in: path
+      description: ID of pet to update
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+    - name: domain
+      in: path
+      description: Sudomain or domain name
+      required: true
+      schema:
+        type: string
+        example: example.com
+    - name: app_language
+      in: path
+      description: Application language
+      required: true
+      schema:
+        type: string
+        example: cssHtml
+    - name: package_type
+      in: path
+      description: A package to assign to your hosting
+      required: true
+      schema:
+        type: string
+        example: free
+    - name: period
+      in: path
+      description: A package to assign to your hosting
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+    - name: package_size
+      in: path
+      description: A package size
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+  responses:
+    '422':
+      description: Invalid input
+  security:
+    - db_auth:
+        - 'write:db'
+        - 'read:db'

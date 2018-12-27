@@ -1,0 +1,37 @@
+post:
+  tags:
+    - DB
+  summary: Add new Database
+  operationId: addDb
+  parameters:
+    - name: folder_id
+      in: path
+      description: ID of pet to update
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+    - name: db_user_id
+      in: path
+      description: user id of database owner
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+    - name: name
+      in: path
+      description: name of Databasee
+      required: true
+      schema:
+        type: integer
+        format: int64
+        example: 1
+  responses:
+    '422':
+      description: Invalid input
+  security:
+    - db_auth:
+        - 'write:db'
+        - 'read:db'
